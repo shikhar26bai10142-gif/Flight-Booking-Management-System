@@ -1,7 +1,6 @@
 # Querying and Sales Analytics Functions
 
-from database import db
-
+from .database import db
 def display_booking(b):
     """Formats and prints an individual booking tuple."""
     print(f"ID: {b[0]} | Name: {b[1]} | Flight: {b[2]} ({b[3]}->{b[4]}) | Date: {b[5]} {b[6]} | Class: {b[7]} | Seat: {b[8]} | Price: Rs. {b[9]}")
