@@ -1,7 +1,6 @@
 # Console Display Utilities
 
-from flight_data import get_flights, get_classes
-
+from .flight_data import get_flights, get_classes
 def show_flights():
     """Displays available flight itineraries."""
     flist = get_flights()
