@@ -1,8 +1,7 @@
 # Core Reservation and Cancellation Engine
 
-from database import db
-from flight_data import get_flights, get_classes
-
+from .database import db
+from .flight_data import get_flights, get_classes
 def get_occupied_seats(key):
     """Retrieves or creates the occupied seat set for a flight-date key."""
     if key not in db["seats"]:
