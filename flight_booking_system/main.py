@@ -1,9 +1,9 @@
 # Main Application Controller and Entry Point
 
-from display import show_flights, show_classes, show_seats
-from booking_engine import get_occupied_seats, book_flight, cancel_booking
-from reports import show_all_bookings, search_booking, sales_report
-from flight_data import get_flights
+from .display import show_flights, show_classes, show_seats
+from .booking_engine import get_occupied_seats, book_flight, cancel_booking
+from .reports import show_all_bookings, search_booking, sales_report
+from .flight_data import get_flights
 
 def run_action(choice):
     """Routes user choice to corresponding program module."""
